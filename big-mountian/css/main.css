@@ -1,0 +1,638 @@
+@import url(https://fonts.googleapis.com/css?family=Lobster);
+@import url(https://fonts.googleapis.com/css?family=Roboto);
+@import url(https://fonts.googleapis.com/css?family=Droid+Serif);
+/*
+Big Mountian Theme v1.0
+October 2015
+*/
+/*Imports*/
+/*Imports end*/
+/*Basic them tweaks*/
+/* line 19, ../sass/main.scss */
+body {
+  color: #222;
+  font-family: 'Roboto', sans-serif;
+}
+
+/* line 23, ../sass/main.scss */
+.row {
+  max-width: 1200px;
+}
+
+/* line 26, ../sass/main.scss */
+.title {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+/* line 30, ../sass/main.scss */
+a {
+  color: indigo;
+  transition: color 0.3s ease;
+}
+
+/* line 34, ../sass/main.scss */
+a:hover {
+  color: #72587f;
+  text-decoration: underline;
+}
+
+/* line 38, ../sass/main.scss */
+label {
+  cursor: default;
+}
+
+/* line 56, ../sass/main.scss */
+input:not([type]),
+input[type="text"],
+input[type="password"],
+input[type="date"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="month"],
+input[type="week"],
+input[type="email"],
+input[type="number"],
+input[type="search"],
+input[type="tel"],
+input[type="time"],
+input[type="url"],
+input[type="color"],
+textarea {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  border-radius: 3px;
+  background-color: #FFFFFF;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #cccccc;
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+  color: rgba(0, 0, 0, 0.75);
+  display: block;
+  font-family: inherit;
+  font-size: 0.875rem;
+  height: 2.3125rem;
+  margin: 0 0 0rem 0;
+  padding: 0.5rem;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: border-color 0.15s linear, background 0.15s linear;
+  -moz-transition: border-color 0.15s linear, background 0.15s linear;
+  -ms-transition: border-color 0.15s linear, background 0.15s linear;
+  -o-transition: border-color 0.15s linear, background 0.15s linear;
+  transition: border-color 0.15s linear, background 0.15s linear;
+}
+
+/* line 97, ../sass/main.scss */
+input:not([type]):focus,
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="date"]:focus,
+input[type="datetime"]:focus,
+input[type="datetime-local"]:focus,
+input[type="month"]:focus,
+input[type="week"]:focus,
+input[type="email"]:focus,
+input[type="number"]:focus,
+input[type="search"]:focus,
+input[type="tel"]:focus,
+input[type="time"]:focus,
+input[type="url"]:focus,
+input[type="color"]:focus,
+textarea:focus {
+  border-color: #fff;
+  box-shadow: 0px 0px 2px purple inset;
+  box-shadow: 0px 0px 10px indigo;
+}
+
+/* line 102, ../sass/main.scss */
+textarea {
+  width: 100%;
+  height: auto;
+  resize: none;
+}
+
+/* line 107, ../sass/main.scss */
+textarea {
+  outline: none;
+}
+
+/* line 110, ../sass/main.scss */
+input[type="submit"] {
+  display: inline-block;
+  background-color: indigo;
+  color: #fff;
+  font-size: 1rem;
+  border: none;
+  border-radius: 3px;
+  padding: 9px 15px 9px 15px;
+  transition: background-color 0.3s ease;
+}
+
+/* line 120, ../sass/main.scss */
+input[type="submit"]:hover {
+  background-color: #72587f;
+  cursor: pointer;
+}
+
+/* line 124, ../sass/main.scss */
+input[type="submit"]:active {
+  outline: none;
+  border: none;
+}
+
+/*Basic them tweaks end*/
+/*Hero and navigation*/
+/* line 134, ../sass/main.scss */
+.parallax-window {
+  min-height: 400px;
+  background: transparent;
+}
+
+/* line 138, ../sass/main.scss */
+.hero {
+  /*	background-color:#55505D;	*/
+  min-height: 375px;
+  width: 100%;
+  /*	background: url("../img/hero-bg.jpg");
+  	background-size: cover !important;
+  	background-attachment:fixed;  */
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #fff;
+  text-align: center;
+}
+
+/* line 152, ../sass/main.scss */
+.hero h1 {
+  margin: 0px auto;
+  font-family: 'Lobster', cursive;
+  font-size: 4rem;
+}
+
+/* line 157, ../sass/main.scss */
+.hero a {
+  color: #fff;
+  text-shadow: 1px 1px 1px indigo;
+}
+
+/* line 161, ../sass/main.scss */
+.hero a:hover {
+  text-decoration: none;
+  color: #fff;
+}
+
+/* line 165, ../sass/main.scss */
+.hero p {
+  font-size: 2rem;
+  font-weight: 1;
+  padding: 0px;
+  margin-top: -20px;
+}
+
+/* line 172, ../sass/main.scss */
+div.nav-menu {
+  background-color: #fff;
+  padding: 0;
+}
+
+/* line 177, ../sass/main.scss */
+div.nav-menu ul {
+  text-align: center;
+  padding-top: 20px;
+}
+
+/* line 182, ../sass/main.scss */
+div.nav-menu ul li {
+  display: inline;
+  list-style-type: none;
+  border-left: 1px solid #ccc;
+}
+
+/* line 187, ../sass/main.scss */
+div.nav-menu ul li:first-child {
+  border-left: none;
+}
+
+/* line 190, ../sass/main.scss */
+div.nav-menu ul li a {
+  color: #555555;
+  font-size: 1.3rem;
+  padding-left: 40px;
+  padding-right: 40px;
+  transition: color 0.3s ease;
+}
+
+/* line 196, ../sass/main.scss */
+div.nav-menu ul li a:hover {
+  color: indigo;
+  text-decoration: none;
+}
+
+/* line 201, ../sass/main.scss */
+.menu-trigger {
+  display: none;
+  cursor: pointer;
+}
+
+/*Hero and navigation*/
+/*main*/
+/* line 208, ../sass/main.scss */
+main {
+  background-color: #eeeeee;
+  padding-top: 50px;
+  padding-bottom: 30px;
+}
+
+/*main end*/
+/*blogroll*/
+/* line 215, ../sass/main.scss */
+.blogroll-container {
+  min-height: 500px;
+  background-color: #fff;
+  border-radius: 4px;
+  box-shadow: 1px 1px 10px #ddd;
+  padding: 0px;
+  margin-bottom: 50px;
+}
+
+/* line 223, ../sass/main.scss */
+.blogroll-container-featured-image {
+  margin: 0x;
+  max-height: 300px;
+  overflow: hidden;
+  border-radius: 3px 3px 0px 0px;
+}
+
+/* line 229, ../sass/main.scss */
+.blogroll-post-textarea {
+  padding: 30px 30px 30px 30px;
+}
+
+/* line 232, ../sass/main.scss */
+.headline a {
+  color: #555555;
+  font-size: 3rem;
+  font-family: 'Droid Serif', serif;
+  font-weight: bold;
+}
+
+/* line 238, ../sass/main.scss */
+.headline a:hover {
+  color: indigo;
+  text-decoration: none;
+}
+
+/* line 242, ../sass/main.scss */
+.post-author p {
+  font-size: 1.4rem;
+  color: #555555;
+  font-family: 'Droid Serif', serif;
+}
+
+/* line 250, ../sass/main.scss */
+.post-date p {
+  font-size: 0.9rem;
+  padding: 0px;
+  margin: 0px;
+  color: #555555;
+}
+
+/* line 256, ../sass/main.scss */
+.more-link {
+  display: inline-block;
+  padding: 9px 15px;
+  background-color: indigo;
+  border-radius: 3px;
+  font-weight: bold;
+  color: #eee;
+  font-size: 0.9rem;
+  transition: background-color 0.3s ease;
+}
+
+/* line 266, ../sass/main.scss */
+.more-link:hover {
+  background-color: #72587f;
+  text-decoration: none;
+  color: #eee;
+}
+
+/* line 271, ../sass/main.scss */
+.older-posts {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+/* line 277, ../sass/main.scss */
+.older-posts-button {
+  padding: 6px 16px;
+  font-size: 0.9rem;
+  background-color: #555555;
+  color: #ddd;
+  transition: background-color 0.3s ease;
+}
+
+/* line 284, ../sass/main.scss */
+.older-posts-button:hover {
+  background-color: indigo;
+  text-decoration: none;
+  color: #ddd;
+}
+
+/* line 289, ../sass/main.scss */
+.post-meta {
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  color: #555555;
+}
+
+/* line 294, ../sass/main.scss */
+.post-meta p {
+  margin: 0px;
+  padding: 10px 0px;
+}
+
+/* line 298, ../sass/main.scss */
+.post-navigation {
+  padding: 20px 0px;
+}
+
+/* line 301, ../sass/main.scss */
+.previous-post {
+  float: left;
+}
+
+/* line 304, ../sass/main.scss */
+.next-post {
+  float: right;
+}
+
+/* line 307, ../sass/main.scss */
+.comments {
+  margin-bottom: 50px;
+  min-height: 300px;
+  background-color: #fff;
+  border-radius: 4px;
+  box-shadow: 1px 1px 10px #ddd;
+  padding: 0px;
+  padding: 30px 30px 30px 30px;
+}
+
+/* line 316, ../sass/main.scss */
+.comments h2 {
+  color: #555555;
+}
+
+/*blogroll end*/
+/*sidebar widgets*/
+/* line 329, ../sass/main.scss */
+.sidebar-widgets ul {
+  list-style-type: none;
+  margin-left: 0px;
+  line-height: 2;
+}
+
+/* line 334, ../sass/main.scss */
+.sidebar-widgets li {
+  border-top: 1px solid #ddd;
+}
+
+/* line 337, ../sass/main.scss */
+.sidebar-widgets li:last-child {
+  border-bottom: 1px solid #ddd;
+}
+
+/* line 340, ../sass/main.scss */
+.widget-container {
+  margin-bottom: 50px;
+}
+
+/* line 343, ../sass/main.scss */
+.widget-container:last-of-type {
+  padding-bottom: 0px;
+}
+
+/*sidebar widgets end*/
+/*footer-widgets and footer*/
+/* line 354, ../sass/main.scss */
+.footer-widgets {
+  padding-top: 75px;
+  padding-bottom: 75px;
+  background-color: #fff;
+}
+
+/* line 359, ../sass/main.scss */
+.footer-widgets {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* line 364, ../sass/main.scss */
+.footer-widgets ul {
+  margin: 0px;
+  padding: 0px;
+}
+
+/* line 368, ../sass/main.scss */
+.footer-widgets li {
+  list-style-type: none;
+  line-height: 2;
+  border-top: 1px solid #ddd;
+}
+
+/* line 373, ../sass/main.scss */
+.footer-widgets li:last-child {
+  border-bottom: 1px solid #ddd;
+}
+
+/* line 376, ../sass/main.scss */
+footer {
+  background-color: #55505D;
+  min-height: 180px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #999;
+}
+
+/* line 384, ../sass/main.scss */
+footer p {
+  margin: 0px;
+  padding: 0px;
+}
+
+/* line 388, ../sass/main.scss */
+footer a {
+  color: #aaa;
+}
+
+/* line 391, ../sass/main.scss */
+footer a:hover {
+  color: #aaa;
+}
+
+/*footer-widgets and footer*/
+/*SMALL MEDIA QUERY 640px and below*/
+@media screen and (max-width: 640px) {
+  /*helper classes*/
+  /* line 414, ../sass/main.scss */
+  hide-for-small {
+    display: none;
+  }
+
+  /* line 417, ../sass/main.scss */
+  .pad-top {
+    padding-top: 5px;
+  }
+
+  /*navigation*/
+  /* line 421, ../sass/main.scss */
+  div.menu-trigger {
+    display: block;
+    font-size: 1.5rem !important;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    padding: 17px 20px 17px 20px;
+    background-color: indigo;
+    color: #eee;
+    font-family: 'Lobster', cursive;
+    position: sticky;
+  }
+
+  /* line 431, ../sass/main.scss */
+  .menu-trigger a {
+    color: #eee;
+    text-shadow: 1px 1px 1px #000;
+  }
+
+  /* line 435, ../sass/main.scss */
+  .menu-trigger a:hover {
+    text-decoration: none;
+  }
+
+  /* line 438, ../sass/main.scss */
+  div.nav-menu {
+    display: none;
+  }
+
+  /* line 441, ../sass/main.scss */
+  div.nav-expanded {
+    display: block;
+  }
+
+  /* line 444, ../sass/main.scss */
+  div.nav-menu ul {
+    margin: 0px;
+    padding-top: 0px !important;
+  }
+
+  /* line 448, ../sass/main.scss */
+  div.nav-menu ul li {
+    display: block;
+    text-align: left;
+    border-left: none;
+    margin-left: 0px;
+    padding-left: 0px;
+  }
+
+  /* line 455, ../sass/main.scss */
+  div.nav-menu ul li a {
+    padding: 5px;
+    display: block;
+    background-color: indigo;
+    color: #eee;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    text-align: center;
+  }
+
+  /* line 463, ../sass/main.scss */
+  div.nav-menu ul li a:hover {
+    color: indigo;
+    background-color: #eee;
+  }
+
+  /*main*/
+  /* line 469, ../sass/main.scss */
+  main {
+    padding-top: 0px;
+  }
+
+  /*blog post area*/
+  /* line 474, ../sass/main.scss */
+  .whole-blog-post {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
+  /* line 478, ../sass/main.scss */
+  .blogroll-post-textarea {
+    padding: 30px 15px 30px 15px;
+  }
+
+  /* line 482, ../sass/main.scss */
+  .blogroll-container,
+  .blogroll-container-featured-image {
+    border-radius: 0px;
+    box-shadow: none;
+  }
+
+  /* line 486, ../sass/main.scss */
+  .blogroll-container-featured-image {
+    max-height: 200px;
+  }
+
+  /* line 489, ../sass/main.scss */
+  .comments {
+    padding: 30px 15px 30px 15px;
+  }
+
+  /*sidebar*/
+  /* line 494, ../sass/main.scss */
+  .sidebar-widgets {
+    padding-top: 30px;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
+  /* line 500, ../sass/main.scss */
+  .widget-container {
+    margin-bottom: 50px;
+  }
+
+  /* line 503, ../sass/main.scss */
+  .widget-container:last-of-type {
+    margin-bottom: 0px;
+  }
+}
+/*footer*/
+/* line 510, ../sass/main.scss */
+.footer-widgets {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+/* line 514, ../sass/main.scss */
+.footer-widget-container {
+  margin-bottom: 50px;
+}
+
+/* line 517, ../sass/main.scss */
+.footer-widget-container:last-of-type {
+  margin-bottom: 0px;
+}
+
+/*SMALL MEDIA QUERY 640px and below*/
+/*LARGE MEDIA QUERY 640px and up*/
+@media screen and (max-width: 641px) {
+  /* line 524, ../sass/main.scss */
+  .hide-for-large {
+    display: none;
+  }
+}
+/*LARGE MEDIA QUERY 481px and up*/
